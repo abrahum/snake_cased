@@ -1,0 +1,22 @@
+[package]
+name = "snake_cased"
+version = "0.1.0"
+edition = "2021"
+authors = ["abrahum<307887491@qq.com>"]
+license = "MIT"
+description = "snake_case for struct or enum"
+keywords = ["snake_case"]
+
+[features]
+derive = ["snake_cased_derive"]
+
+[dependencies]
+# snake_cased_derive = "0.1.0"
+snake_cased_derive = { path = "./snake_cased_derive", optional = true }
+
+[workspace]
+members = ["snake_cased_derive"]
+
+[[example]]
+name = "example"
+required-features = ["derive"]

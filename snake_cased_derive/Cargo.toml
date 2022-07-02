@@ -1,0 +1,16 @@
+[package]
+name = "snake_cased_derive"
+version = "0.1.0"
+edition = "2021"
+authors = ["abrahum<307887491@qq.com>"]
+license = "MIT"
+description = "derive for snake_cased"
+keywords = ["snake_case"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+syn = "1"
+proc-macro2 = "1"
