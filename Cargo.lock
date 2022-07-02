@@ -24,12 +24,23 @@ dependencies = [
 name = "snake_cased"
 version = "0.1.0"
 dependencies = [
- "snake_cased_derive",
+ "snake_cased_derive 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "snake_cased_derive"
 version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "snake_cased_derive"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6252b6ce988b29cbd9d6ad1c7f7c11076f5a4df5d2c001f60e16d12631500cd9"
 dependencies = [
  "proc-macro2",
  "quote",
